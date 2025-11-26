@@ -1,1 +1,17 @@
 GET http://localhost:8080/api/users/u100 HTTP/1.1
+
+###
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+    "userId": "u100",
+    "password": "1234"
+}
+
+###
+GET http://localhost:8080/api/users/u100/services HTTP/1.1
+
+###
+
+GET https://sdp-service-production.up.railway.app/api/users/u100 HTTP/1.1
