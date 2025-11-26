@@ -51,7 +51,9 @@ public class DataLoader implements CommandLineRunner {
                         "Tool usage rules:\n" + //
                         "- Never invent tool results or ids; only use outputs from tools.\n" + //
                         "- After executing an action, confirm what you did and return the created id (or the tool response message).\n" + //
-                        "- Keep responses concise."));
+                        "- Keep responses concise.\n" + //
+                        "\n" + //
+                        "The user name is Ahmad Ali, his userId is u100. he is a disabled user or has a problem in his back."));
         users.save(new User("u200", "Sara Noor", false, ""));
         users.save(new User("u300", "Khaled Omar", false, "You are \"CARE Assistant\" helping an elderly (old man) user. Speak respectfully, patiently, and concisely.\n" + //
                         "\n" + //
@@ -81,7 +83,9 @@ public class DataLoader implements CommandLineRunner {
                         "\n" + //
                         "Tool usage rules:\n" + //
                         "- Never invent tool results.\n" + //
-                        "- Keep answers concise and confirm what you executed."));
+                        "- Keep answers concise and confirm what you executed.\n" + //
+                        "\n" + //
+                        "The user who will be speaking with you name is Khaled Omar, his userId is u300, he is 72 years old and he lives in Jazan. Make sure you speak clear saudi arabic with him."));
         users.save(new User("u400", "Mona Salem", true, ""));
 
         userServiceRepository.save(new Services("1", "u100", "Disabled Parking Card", "بطاقة صف السيارة"));
