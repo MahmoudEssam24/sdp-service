@@ -28,13 +28,13 @@ public class UserController {
     @GetMapping("/{id}")
     public UserResponse get(@PathVariable String id) {
         User u = svc.getRequired(id);
-        return new UserResponse(u.getId(), u.getName(), u.isDisabled());
+        return new UserResponse(u.getId(), u.getName(), u.isDisabled(), u.getPrompt());
     }
 
     @PostMapping("/login")
     public UserResponse login(@RequestBody AuthenticationModel authenticationModel) {
         User u = svc.getRequired(authenticationModel.userId());
-        return new UserResponse(u.getId(), u.getName(), u.isDisabled());
+        return new UserResponse(u.getId(), u.getName(), u.isDisabled(), u.getPrompt());
     }
 
     @GetMapping("/{id}/services")
