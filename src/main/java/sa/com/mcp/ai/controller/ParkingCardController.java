@@ -1,6 +1,7 @@
 package sa.com.mcp.ai.controller;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,7 +36,13 @@ public class ParkingCardController {
 
     @GetMapping
     public List<String> getCards() {
-        return cards;
+
+        if (cards.isEmpty()) {
+            return cards;
+        } else {
+            cards.clear();
+            return Arrays.asList("cards");
+        }
     }
 
 }
