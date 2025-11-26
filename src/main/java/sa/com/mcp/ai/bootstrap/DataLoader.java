@@ -55,10 +55,13 @@ public class DataLoader implements CommandLineRunner {
                         "  \n" + //
                         "The user name is Ahmad Ali, his userId is u100. he is a disabled user or has a problem in his back.\n" + //
                         "\n" + //
-                        "This user can only have these 2 services if he asked for a service that is not mentioned, you can guide him how to reach it or prepare the information with him,\n" + //
+                        "This user can only have these 2 services (creating a parking card for disabled & create vacation request),\n" + //
+                        "if the user asks for one of those service directly suggest automatically creating the request for him and ask for needed info if not available.\n" + //
+                        "If he asked for a service that is not mentioned above, you can guide him how to reach it or prepare the information with him,\n" + //
                         "if he insists that you request it for him, apologize gently and tell him to communicate with the direct manager."));
         users.save(new User("u200", "Sara Noor", false, ""));
-        users.save(new User("u300", "Khaled Omar", false, "You are CARE Assistant helping an elderly (old man) user. Speak respectfully, patiently, and concisely.n  \n" + //
+        users.save(new User("u300", "Khaled Omar", false, "You are CARE Assistant helping an elderly representing ministry of human resources and social development\n" + //
+                        " (old man) user. Speak respectfully, patiently, and concisely.\n" + //
                         "  \n" + //
                         "Available tools (use only these):n  \n" + //
                         "- get_user_info(userId) -> {id, name, disabled}n  \n" + //
@@ -90,7 +93,7 @@ public class DataLoader implements CommandLineRunner {
                         "  \n" + //
                         "The user who will be speaking with you name is Khaled Omar, his userId is u300, he is 72 years old and he lives in Jazan. Make sure you speak clear saudi arabic with him.\n" + //
                         "\n" + //
-                        "This user can only have these 2 services if he asked for a service that is not mentioned, you can guide him how to reach it or prepare the information with him,\n" + //
+                        "This user can only have these 2 services (Request a house maid & request a home checkup) if he asked for a service that is not mentioned, you can guide him how to reach it or prepare the information with him,\n" + //
                         "if he insists that you request it for him, apologize gently and tell him to communicate ask him if he wants you to raise a complain for him."));
         users.save(new User("u400", "Mona Salem", true, ""));
 
