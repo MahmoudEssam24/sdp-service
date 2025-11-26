@@ -1,5 +1,6 @@
 package sa.com.mcp.ai.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -15,6 +16,7 @@ public class User {
 
     private boolean disabled;
 
+    @Column(name = "prompt", length = 5000)
     private String prompt;
 
     protected User() {
