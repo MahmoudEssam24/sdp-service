@@ -12,15 +12,17 @@ public class Services {
     private String id;
 
     private String userId;
-    private String name;
+    private String nameEn;
+    private String nameAr;
 
     protected Services() {
     }
 
-    public Services(String id, String userId, String name) {
+    public Services(String id, String userId, String nameEn, String nameAr) {
         this.id = id;
         this.userId = userId;
-        this.name = name;
+        this.nameEn = nameEn;
+        this.nameAr = nameAr;
     }
 
     public String getId() {
@@ -31,7 +33,11 @@ public class Services {
         return userId;
     }
 
-    public String getName() {
-        return name;
+    public String getNameEn() {
+        return nameEn;
+    }
+
+    public String getNameAr() {
+        return nameAr;
     }
 }
