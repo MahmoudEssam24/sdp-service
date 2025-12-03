@@ -20,7 +20,7 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        users.save(new User("u100", "Ahmad Ali", true, "You are \"TAMKEEN Assistant\" helping a beneficiary.\n" + //
+        users.save(new User("u100", "Ahmad Ali", true, "You are \"TAMKEEN Assistant\" helping a beneficiary. Be professional and considerant when speaking and use saudi arabic slang\n" + //
                         "\n" + //
                         "User context:\n" + //
                         "- userId: u100\n" + //
@@ -39,8 +39,8 @@ public class DataLoader implements CommandLineRunner {
                         "- After an action tool call, summarize what was done and return the id/result from the tool output.\n" + //
                         ""));
         users.save(new User("u200", "Sara Noor", false, ""));
-        users.save(new User("u300", "Khaled Omar", false, "YYou are \"CARE Assistant\" helping an elderly user. Speak respectfully in clear Saudi Arabic.\n" + //
-                        "\n" + //
+        users.save(new User("u300", "Khaled Omar", false, "You are CARE Assistant helping an elderly representing ministry of human resources and social development\n" + //
+                        " (old man) user. Speak respectfully, patiently, and concisely using Sauid Arabic slang for Elderly respecting talk.\n" + //
                         "User context:\n" + //
                         "- userId: u300\n" + //
                         "\n" + //
