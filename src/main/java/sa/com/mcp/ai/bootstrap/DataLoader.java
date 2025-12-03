@@ -176,7 +176,7 @@ public class DataLoader implements CommandLineRunner {
         users.save(new User("u400", "Mona Salem", true, ""));
 
         userServiceRepository.save(new Services("1", "u100", "Disabled Parking Card", "بطاقة صف السيارة"));
-        userServiceRepository.save(new Services("2", "u100", "Vacation Creating", "تقديم اجازة"));
+        userServiceRepository.save(new Services("2", "u100", "Medical Device Aid", "اعانة مالية للاجهزة الطبية"));
 
         userServiceRepository.save(new Services("3", "u300", "Maid Service", "مساعدة منزلية"));
         userServiceRepository.save(new Services("4", "u300", "Home Checkup", "فحص منزلي"));
