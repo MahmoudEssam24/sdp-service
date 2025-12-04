@@ -53,7 +53,7 @@ public class MedicalDeviceAidPocController {
         req.userId,
         req.deviceCode,
         "SUBMITTED",
-        "تم تقديم طلب الإعانة المالية للأجهزة الطبية بنجاح",
+        "تم تقديم طلب الأجهزة الطبية",
         Instant.now().toString()
     );
 
