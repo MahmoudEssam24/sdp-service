@@ -16,7 +16,8 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "https://19e28ad4-59b8-4219-a686-3b065d303788.lovableproject.com",
-                                "https://id-preview--19e28ad4-59b8-4219-a686-3b065d303788.lovable.app"
+                                "https://id-preview--19e28ad4-59b8-4219-a686-3b065d303788.lovable.app",
+                                "https://preview--ask-me-anything-ai-94.lovable.app"
 
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
